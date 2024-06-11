@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/VRTemplateAssets/Scenes/SampleScene.unity
+    guid: 55daccc09a3b69647bbab145b54a3ab3
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/EASY_Scene/EZ_F1_Attack1Test.unity
+    guid: 6adbb9d22aaaf8443abfa4c7676b12c0
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/EASY_Scene/EZ_F2_Diffence1Test.unity
+    guid: 25509bd0eb4ccf34b90ed4c115aff9e6
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/EASY_Scene/EZ_F3_Attack2Test.unity
+    guid: 7e738e4df504d65499c4ccb560d3540f
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/EASY_Scene/EZ_F4_Diffence2Test.unity
+    guid: 277d868fcb4bcf04e91345b74bd55b4d
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/EASY_Scene/EZ_F5_AttackTest.unity
+    guid: 48f7bb3216da7134294f261407410937
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/EASY_Scene/EZ_F6_ResultTest.unity
+    guid: b5c481e5d944b5642bbd0733bcca5815
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver1.0/diffence2Scene.unity
+    guid: f17281f64c1f3ef4e8649c7e5d51e180
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver1.0/Result.unity
+    guid: 8d1af4e2842993642a1483d3c83863bd
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/HARD_Scene/Hard_3_Attack2.unity
+    guid: 8649deb327b152848b8a893196eb5888
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver1.0/FinalattackScene.unity
+    guid: 90e2219b71092344b935784513a33588
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/F0_StartTest.unity
+    guid: 559f274a79581dd4b9f5a6d406a87f28
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/NORMAL_Scene/F6_ResultTest.unity
+    guid: 42273af7e8b45db4ba7d437afab3a74e
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/NORMAL_Scene/F1_Attack1Test.unity
+    guid: 06d011205afc78d429b9fe13894d74b7
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/NORMAL_Scene/F2_Diffence1Test.unity
+    guid: b688b466c000aa148874b3b2b6af36e7
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/HARD_Scene/Hard_1_Attack.unity
+    guid: f53e46663ba4dfb4c8fd25a60a371bbb
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/HARD_Scene/Hard_2_Diffence.unity
+    guid: 18f4f061c4eddc04382304f32673989e
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/Hoketu/Hard_3_Attack.unity
+    guid: 20043faea6335f94fb168129aaa83186
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/HARD_Scene/Hard_4_Diffence.unity
+    guid: ec768a37070cc6644a24f7e30c80c37c
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/HARD_Scene/Hard_5_Attack.unity
+    guid: 53002c5d206292340bc9c91438276658
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/HARD_Scene/Hard_6_Result.unity
+    guid: dc2314432316ab5408c301ad7b062d71
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/NORMAL_Scene/F3_Attack2Test.unity
+    guid: 24afffd1858a3a348b231e2737085251
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/NORMAL_Scene/F4_Diffence2Test.unity
+    guid: 9ba656961202433498c41c4b3e75b2bb
+  - enabled: 1
+    path: Assets/Juvenile_test/scene/ver3.0/NORMAL_Scene/F5_AttackTest.unity
+    guid: b136de278e826614f96b8b754cee9eb0
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 9bec1ce6a03ccba4b9a8215241b32e63, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: a49cadc1a815591479693b955ccf08c1, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1a4c68ca72a83449f938d669337cb305, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a9a6963505ddf7f4d886008c6dc86122, type: 2}
