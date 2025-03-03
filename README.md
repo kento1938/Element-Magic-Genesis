@@ -1,15 +1,4 @@
-# いばらき×立命館DAY2024
-
-## イベント概要
-**いばらき×立命館DAY2024** は、立命館大学と茨木市が連携して開催するイベントで、最先端技術の紹介や体験ができる場として開催されました。本プロジェクトでは、観客の筋電位（EMG）信号を活用したVRアトラクションを展示し、多くの来場者に体験していただきました。
-
-## 体験者数
-本イベントでは、**1日で136人** にVRアトラクションを体験していただきました。参加者は、プレイヤーと観客の役割を交代しながら、筋電位を活用した新しいインタラクションを楽しみました。
-
-## プロモーションビデオ
-イベント時に作成した**プロモーションビデオ**では、以下の内容を紹介しています。
-
-https://github.com/user-attachments/assets/7dce81fb-3257-43cf-8016-1dd97e4d3e33
+#　国際学会とイベント成果
 
 # 観客の筋電位信号を活用した協調型VRアトラクション
 
@@ -88,6 +77,21 @@ https://github.com/user-attachments/assets/7dce81fb-3257-43cf-8016-1dd97e4d3e33
 - Kawamoto, R., Komuro, C., & Kusiyama, K. (2019). Audience participation devices for sports spectating. *IPSJ Interaction*.
 - Minagawa, T., & Nijima, T. (2018). Augmentation of communication between players and spectators during sports competition. *Transactions of Information Processing Society of Japan*.
 - Nozaki, H., Kataoka, Y., Arzate Cruz, C., Shibata, F., & Kimura, A. (2023). Analysis and considerations of the controllability of EMG-based force input. *Human-Computer Interaction*.
+
+
+
+# いばらき×立命館DAY2024
+
+## イベント概要
+**いばらき×立命館DAY2024** は、立命館大学と茨木市が連携して開催するイベントで、最先端技術の紹介や体験ができる場として開催されました。本プロジェクトでは、観客の筋電位（EMG）信号を活用したVRアトラクションを展示し、多くの来場者に体験していただきました。
+
+## 体験者数
+本イベントでは、**1日で136人** にVRアトラクションを体験していただきました。参加者は、プレイヤーと観客の役割を交代しながら、筋電位を活用した新しいインタラクションを楽しみました。
+
+## プロモーションビデオ
+イベント時に作成した**プロモーションビデオ**では、以下の内容を紹介しています。
+
+https://github.com/user-attachments/assets/7dce81fb-3257-43cf-8016-1dd97e4d3e33
 
 ---
 © 2024 Ritsumeikan University. 本研究はJSPS KAKENHI Grant Number 24K20823の助成を受けています。
