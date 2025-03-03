@@ -1,5 +1,7 @@
 # Element-Magic-Genesis
 
+## ICAT EHVE 2024 Best Demo Award Finalists  
+
 # 観客の筋電位信号を活用した協調型VRアトラクション
 
 [ICAT_EGVE_2024_demo_1009.pdf](https://github.com/user-attachments/files/19048892/ICAT_EGVE_2024_demo_1009.pdf)
