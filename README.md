@@ -1,2 +1,82 @@
-# Element-Magic-Genesis-of-Alba
+# Element-Magic-Genesis
+
+# 観客の筋電位信号を活用した協調型VRアトラクション
+
+[ICAT_EGVE_2024_demo_1009.pdf](https://github.com/user-attachments/files/19048892/ICAT_EGVE_2024_demo_1009.pdf)
+
+## 概要
+本プロジェクトでは、観客の筋電位（EMG）信号をユーザーインターフェース（UI）として活用し、ゲームプレイヤーと観客が協力してインタラクションを行う新しい手法を提案します。その応用として、VRアトラクション **「Element Magic Genesis」** を開発しました。このアトラクションでは、プレイヤーと観客が協力し、観客の筋電位の強さによっ[ICAT_EGVE_2024_demo_1009.pdf](https://github.com/user-attachments/files/19048890/ICAT_EGVE_2024_demo_1009.pdf)
+てプレイヤーの能力が強化される仕組みを採用しています。
+
+## 研究の背景
+観客はスポーツやゲームを観戦する際、興奮すると無意識に体を緊張させることがあります。本研究では、この観客の筋緊張をゲームの入力として活用することで、プレイヤーと観客の一体感を高めることを目的としています。
+
+従来の観客参加型システムでは、音声に反応する発光デバイス [KKK19] や、腕を振ることでプレイヤーを応援するシステム [MN18] などが提案されてきました。しかし、これらは騒音の影響を受けやすい、または観客に十分なスペースが必要といった課題がありました。本研究では、EMGデバイスを活用することで、狭い空間でも騒音の影響を受けずに直感的な応援を実現することを目指しました。
+
+## アトラクション「Element Magic Genesis」
+**「Element Magic Genesis」** は、観客のEMG信号を用いたプレイヤー支援システムを実装したVRアトラクションです（図1）。
+
+- **プレイヤー**: VRアバターを操作し、敵を攻撃・防御
+- **観客**: 腕の筋電位の強さに応じてプレイヤーの攻撃力や防御能力を強化
+
+本アトラクションでは、プレイヤーと観客が協力しながら戦闘を進める仕組みを採用しており、以下の2つのフェーズで構成されています。
+
+### 1. 攻撃フェーズ
+プレイヤーは両手を使って敵を攻撃します。攻撃の威力は、観客の筋電位の強さによって増減します。
+
+### 2. 防御フェーズ
+プレイヤーは敵の攻撃を防御するためにシールドを持ちます。シールドの色（赤・青）は観客のEMG信号の強さによって変化し、適切な色で防御しないとダメージを受ける仕組みになっています。
+
+## サポートモード
+観客のEMG信号をUIとして活用し、2種類のサポートモードを用意しました。
+
+### 1. 閾値モード（Threshold mode）
+- プレイヤーの攻撃時、観客のEMGが閾値を超えると攻撃力が増加。
+- 閾値を超えた後、1.5秒以内にプレイヤーが攻撃を行うと、最大の攻撃力を発揮。
+
+### 2. 連続モード（Continuous mode）
+- 観客の腕の筋緊張レベルによってシールドの色を切り替え。
+- EMGが **20%～49%** の場合 → **青いシールド**
+- EMGが **50%以上** の場合 → **赤いシールド**
+- EMGが **20%未満** の場合はシールドが生成されない。
+
+プレイヤーと観客の視界内に **力の強さを示すゲージ** を表示し、リアルタイムでEMGの状態を確認できるようにしました（図2）。
+
+## システム構成
+本アトラクションのシステム構成は以下の通りです（図3）。
+
+- **プレイヤー側**:
+  - **HMD（Meta Quest 3）** を装着し、両手にコントローラーを持つ。
+  - コントローラーの位置をトラッキングし、攻撃フェーズでは顔から1.5m離れた位置で攻撃を発動。
+  
+- **観客側**:
+  - **EMGデバイス** を支配腕に装着し、プレイヤーの動きを観察。
+  - **Unity（2023.2.8f1）** でセンサーデータを受信し、バーチャルオブジェクトをレンダリング。
+  - システムのフレームレートは **約120fps**。
+
+- **EMGデバイスの仕様**:
+  - 振幅範囲: **-1.25mV ～ 1.25mV**
+  - 信号増幅: **1000倍**
+  - サンプリング周波数: **1kHz**
+  - 使用周波数帯域: **5～500Hz（55～66Hzは電源ノイズ対策のため除去）**
+  - 平滑化処理: **RMS（ルート平均二乗値）**
+  - RMSウィンドウサイズ: **300ms（スライディングウィンドウ10ms）**
+
+## デモ体験と考察
+本デモでは、プレイヤーと観客が **攻撃フェーズ** と **防御フェーズ** を体験します。
+
+### 体験結果
+- 観客役の参加者は、腕を緊張させることで **没入感が向上** したと報告。
+- プレイヤーと観客がより **一体感を持ってプレイできる** ことを確認。
+- VR環境における **異なる入力ソースを用いた協調インタラクション** の可能性を示唆。
+
+## 参考文献
+- Higashimori, T., Kataoka, Y., Shibata, F., & Kimura, A. (2022). Fundamental study of using voluntary muscle potential measurements of the hand arm for interactive UI manipulation. *IPSJ SIG Technical Report*.
+- Kawamoto, R., Komuro, C., & Kusiyama, K. (2019). Audience participation devices for sports spectating. *IPSJ Interaction*.
+- Minagawa, T., & Nijima, T. (2018). Augmentation of communication between players and spectators during sports competition. *Transactions of Information Processing Society of Japan*.
+- Nozaki, H., Kataoka, Y., Arzate Cruz, C., Shibata, F., & Kimura, A. (2023). Analysis and considerations of the controllability of EMG-based force input. *Human-Computer Interaction*.
+
+---
+© 2024 Ritsumeikan University. 本研究はJSPS KAKENHI Grant Number 24K20823の助成を受けています。
+
  
